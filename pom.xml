@@ -59,13 +59,21 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.2.5</version>
+
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>pom.xml</suiteXmlFile>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
+
+					<!-- pass env variable -->
+					<systemPropertyVariables>
+						<env>${env}</env>
+					</systemPropertyVariables>
 				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
