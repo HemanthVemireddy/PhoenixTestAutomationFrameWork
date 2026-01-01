@@ -33,7 +33,7 @@ public class UserDetailsAPITest
 			.and()
 			.body("message", equalTo("Success"))
 			.and()
-			.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-schema\\UserDetailsResponseSchema.json"));
+			.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-schema/UserDetailsResponseSchema.json"));
 			
 		
 			

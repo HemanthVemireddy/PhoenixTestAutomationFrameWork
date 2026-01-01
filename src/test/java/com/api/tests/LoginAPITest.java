@@ -41,7 +41,7 @@ public class LoginAPITest {
 			.log().all()
 		    .body("message", equalTo("Success"))
 		    .and()
-		    .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-schema\\LoginResponseSchema.json"));
+		    .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("response-schema/LoginResponseSchema.json"));
 		
 	}
 

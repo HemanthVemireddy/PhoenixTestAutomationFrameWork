@@ -35,7 +35,7 @@ public class CountAPITest
 	        body("data.size()", equalTo(3)).
 		    body("data.count", everyItem(greaterThanOrEqualTo(0))).
 		    body("data.label", everyItem(not(blankOrNullString()))).
-		    body(matchesJsonSchemaInClasspath("response-schema\\CountAPIResponseSchema-FD.json")).
+		    body(matchesJsonSchemaInClasspath("response-schema/CountAPIResponseSchema-FD.json")).
 		    body("data.key", containsInAnyOrder("pending_for_delivery","created_today","pending_fst_assignment"));
 	        //jsonPath().getString()
 	}
