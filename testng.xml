@@ -4,8 +4,8 @@
 
     <test name="API Tests">
         <classes>
-            <class name="com.api.tests.CountAPITest"/>
             <class name="com.api.tests.LoginAPITest"/>
+            <class name="com.api.tests.CountAPITest"/>
             <class name="com.api.tests.MasterAPITest"/>
             <class name="com.api.tests.UserDetailsAPITest"/>
         </classes>
