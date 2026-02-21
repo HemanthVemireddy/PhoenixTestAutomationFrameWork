@@ -32,7 +32,12 @@ public class SpecUtils {
         
     }
     
-    /*
+    private static String getproperty(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/*
      * Token Based Method
      */
     public static RequestSpecification requestSpecWithAuth(Role role) {
